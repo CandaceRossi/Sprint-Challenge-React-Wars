@@ -1,13 +1,7 @@
-import React from "react";
+// import React, { useState } from "react";
+// import CardGrid from "../../src/CardGrid";
 
-const Cards = props => {
-  console.log("CardProps", props);
-  return (
-    <div>
-      {/* <img src="this is not a url" /> */}
-      <h3>{props.name}</h3>;<p> {props.birth_year}</p>;
-    </div>
-  );
-};
+// const Cards = props => {
+//   console.log("CardProps", props);
 
-export default Cards;
+// export default Cards;
