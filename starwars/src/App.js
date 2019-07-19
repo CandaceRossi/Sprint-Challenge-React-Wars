@@ -34,13 +34,13 @@ const App = () => {
       {charData.map(character => {
         return (
           <CardGrid
-            key={charData.url}
-            name={charData.name}
-            height={charData.height}
-            hair={charData.hair_color}
-            tone={charData.skin_color}
-            eye={charData.eye_color}
-            birth={charData.birth_year}
+            key={character.url}
+            name={character.name}
+            height={character.height}
+            hair={character.hair_color}
+            tone={character.skin_color}
+            eye={character.eye_color}
+            birth={character.birth_year}
           />
         );
       })}
