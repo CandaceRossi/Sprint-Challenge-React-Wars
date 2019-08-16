@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
+import Header from "./components/Header";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -13,12 +14,14 @@ const App = () => {
   useEffect(() => {
     axios.get("https://swapi.co/api/people/").then(res => {
       console.log("characters", res);
+      setCharAttrib(res.data.results);
     });
   }, []);
 
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <Header />
     </div>
   );
 };
