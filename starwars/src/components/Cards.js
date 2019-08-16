@@ -4,18 +4,17 @@ import styled from "styled-components";
 const CLayout = styled.div`
   width: 100%;
   margin: 0 auto;
+  padding: 15px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: row;
 `;
 
 const Layout = styled.div`
   width: 375px;
-  height: 500px;
   margin: auto;
   border: 1px solid black;
   border-radius: 10px;
-  background: grey;
+  background: Linear-gradient(to top, Darkred, Grey);
   color: white;
   font-family: "fantasy";
   box-sizing: border-box;

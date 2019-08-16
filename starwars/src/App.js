@@ -26,20 +26,22 @@ const App = () => {
       {charAttrib.map(char => {
         return (
           <div className="Cardbody">
-            <Cards
-              key={char.id}
-              name={char.name}
-              gender={char.gender}
-              height={char.height}
-              haircolor={char.hair_color}
-              birthyear={char.birth_year}
-              created={char.created}
-              edited={char.edited}
-              eyecolor={char.eye_color}
-              homeworld={char.homeworld}
-              mass={char.mass}
-              skincolor={char.skin_color}
-            />
+            <div>
+              <Cards
+                key={char.id}
+                name={char.name}
+                gender={char.gender}
+                height={char.height}
+                haircolor={char.hair_color}
+                birthyear={char.birth_year}
+                created={char.created}
+                edited={char.edited}
+                eyecolor={char.eye_color}
+                homeworld={char.homeworld}
+                mass={char.mass}
+                skincolor={char.skin_color}
+              />
+            </div>
           </div>
         );
       })}
