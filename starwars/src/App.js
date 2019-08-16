@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 import Header from "./components/Header";
+import Cards from "./components/Cards";
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -22,6 +23,24 @@ const App = () => {
     <div className="App">
       <h1 className="Header">React Wars</h1>
       <Header />
+      {charAttrib.map(char => {
+        return (
+          <Cards
+            key={char.id}
+            name={char.name}
+            gender={char.gender}
+            height={char.height}
+            haircolor={char.hair_color}
+            birthyear={char.birth_year}
+            created={char.created}
+            edited={char.edited}
+            eyecolor={char.eye_color}
+            homeworld={char.homeworld}
+            mass={char.mass}
+            skincolor={char.skin_color}
+          />
+        );
+      })}
     </div>
   );
 };
