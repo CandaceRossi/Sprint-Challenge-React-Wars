@@ -25,20 +25,22 @@ const App = () => {
       <Header />
       {charAttrib.map(char => {
         return (
-          <Cards
-            key={char.id}
-            name={char.name}
-            gender={char.gender}
-            height={char.height}
-            haircolor={char.hair_color}
-            birthyear={char.birth_year}
-            created={char.created}
-            edited={char.edited}
-            eyecolor={char.eye_color}
-            homeworld={char.homeworld}
-            mass={char.mass}
-            skincolor={char.skin_color}
-          />
+          <div className="Cardbody">
+            <Cards
+              key={char.id}
+              name={char.name}
+              gender={char.gender}
+              height={char.height}
+              haircolor={char.hair_color}
+              birthyear={char.birth_year}
+              created={char.created}
+              edited={char.edited}
+              eyecolor={char.eye_color}
+              homeworld={char.homeworld}
+              mass={char.mass}
+              skincolor={char.skin_color}
+            />
+          </div>
         );
       })}
     </div>
